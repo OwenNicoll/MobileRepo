@@ -81,6 +81,8 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("JumpSpeed", Mathf.Abs(rb.velocity.y));
 
+       
+
         
 
 
