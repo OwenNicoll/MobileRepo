@@ -21,7 +21,7 @@ public class MovePlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(direction * platformSpeed);
+        rb.AddForce(direction * platformSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

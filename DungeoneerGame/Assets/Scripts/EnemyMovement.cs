@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(direction * enemySpeed);
+        rb.AddForce(direction * enemySpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

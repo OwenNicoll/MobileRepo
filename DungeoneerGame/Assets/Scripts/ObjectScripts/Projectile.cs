@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
 
 
         // Set velocity of projectile in direction of mouse
-        rigidBody.velocity = transform.right * force;
+        rigidBody.velocity = transform.right * force *Time.deltaTime;
        
     }
 

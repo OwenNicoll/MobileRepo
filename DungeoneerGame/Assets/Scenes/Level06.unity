@@ -77285,7 +77285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4288055758066032913, guid: 9e0ce76577299be419b8c24cf90db369, type: 3}
       propertyPath: enemySpeed
-      value: 10
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288055758066032916, guid: 9e0ce76577299be419b8c24cf90db369, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4288055758066032917, guid: 9e0ce76577299be419b8c24cf90db369, type: 3}
       propertyPath: m_RootOrder
@@ -77346,7 +77350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4288055758066032913, guid: 9e0ce76577299be419b8c24cf90db369, type: 3}
       propertyPath: enemySpeed
-      value: 10
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288055758066032916, guid: 9e0ce76577299be419b8c24cf90db369, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4288055758066032917, guid: 9e0ce76577299be419b8c24cf90db369, type: 3}
       propertyPath: m_RootOrder
