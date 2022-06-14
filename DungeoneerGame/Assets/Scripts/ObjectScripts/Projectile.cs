@@ -27,4 +27,12 @@ public class Projectile : MonoBehaviour
         rigidBody.velocity = transform.right * force;
        
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if ((collision.tag == "Ground") || collision.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

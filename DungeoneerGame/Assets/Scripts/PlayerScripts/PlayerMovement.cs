@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveLeft()
     {
-        rb.AddForce(new Vector2(-moveSpeed, 0) * friction);
+        rb.AddForce(new Vector2(-moveSpeed, 0) * friction * Time.deltaTime);
         if (facingRight)
         {
             Flip();
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveRight()
     {
-        rb.AddForce(new Vector2(moveSpeed, 0) * friction);
+        rb.AddForce(new Vector2(moveSpeed, 0) * friction * Time.deltaTime);
         if (!facingRight)
         {
             Flip();
@@ -88,23 +88,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(new Vector2(-moveSpeed, 0) * friction);
-            if (facingRight)
-            {
-                Flip();
-            }
-
-                     
+            MoveLeft();
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(new Vector2(moveSpeed, 0) * friction);
-            if (!facingRight)
-            {
-                Flip();
-            }
-            
+            MoveRight();
         }
 
 
