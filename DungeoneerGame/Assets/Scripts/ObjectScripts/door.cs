@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// PURPOSE: this script will load the next level if player collides with door
+
 public class door : MonoBehaviour
 {
+    // The scene we want to load
     public string targetScene;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,23 +17,11 @@ public class door : MonoBehaviour
         {
             // Change scene
             SceneManager.LoadScene(targetScene);
+
+            
         }
 
 
     }
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

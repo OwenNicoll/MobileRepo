@@ -8,6 +8,7 @@ TagManager:
   - Hazard
   - TurnPoint
   - Ground
+  - Knife
   layers:
   - Default
   - TransparentFX
