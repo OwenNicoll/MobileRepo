@@ -10264,6 +10264,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1408174666398740850, guid: c4e0cd478b558184daf40ce58638af4d, type: 3}
+      propertyPath: m_Name
+      value: ReloadButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915089425531835412, guid: c4e0cd478b558184daf40ce58638af4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2307005457397947073, guid: eb39d540f7cef0a46a387fed1c46a92c, type: 3}
+    - target: {fileID: 3915089425531835412, guid: c4e0cd478b558184daf40ce58638af4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reload
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915089425531835412, guid: c4e0cd478b558184daf40ce58638af4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5971347046010157030, guid: c4e0cd478b558184daf40ce58638af4d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

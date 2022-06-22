@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 
 // PURPOSE: This script will allow the player to move, jump and shoot using keyboard or buttons. It will also kill and respawn the player
 
@@ -40,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
 
         // Play sound at start of each level
         FindObjectOfType<AudioManager>().Play("Door");
+    }
+
+    public void Reload()
+    {
+       Scene currentScene = SceneManager.GetActiveScene(); SceneManager.LoadScene(currentScene.name);
     }
 
     public void MoveLeft()
